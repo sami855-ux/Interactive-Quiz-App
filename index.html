@@ -1,0 +1,141 @@
+<!-- Source code for simple quiz app with HTML, CSS and JAVASCRIPT 
+  All page in one page 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Reset stylesheet must come frist -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/lightbulb.png" />
+    <title>Simple Quiz App</title>
+  </head>
+  <body>
+    <!-- Preparing for quiz -->
+    <div class="wrapper-prepare hidden">
+      <h1>Welcome to my awesome quiz app</h1>
+      <div class="conatiner">
+        <img src="img/hi (1).png" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque maxime
+          mollitia vel quod excepturi incidunt <br />
+          illum sed, quibusdam cumque dicta. Sit facilis iusto quia, veniam
+          possimus similique itaque <br />
+          qui aliquid impedit? <br />Error dolorem vitae illum iusto repellendus
+          itaque laboriosam, odio aliquam, sed labore nostrum ipsam, laborum ab
+          quo obcaecati inventore.
+        </p>
+      </div>
+      <h2>Choose Your Avater</h2>
+      <div class="avater-cont">
+        <img class="avater-img" src="img/man (1).png" alt="" />
+        <img class="avater-img" src="img/man (2).png" alt="" />
+        <img class="avater-img" src="img/woman (1).png" alt="" />
+        <img class="avater-img" src="img/woman (2).png" alt="" />
+        <img class="avater-img" src="img/man (3).png" alt="" />
+        <img class="avater-img" src="img/old-man.png" alt="" />
+      </div>
+      <div class="avater-info">
+        <section class="input">
+          <label> Name</label>
+          <input type="text" class="name" />
+        </section>
+        <section class="input">
+          <label> carrer</label>
+          <select class="job">
+            <option value="None">None</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Student">Student</option>
+            <option value="Professor">Professor</option>
+            <option value="School Supervisor">School Supervisor</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
+        <button type="button" class="continue">Continue</button>
+      </div>
+    </div>
+
+    <!-- Executing the quiz -->
+    <div class="main-view ">
+      <section class="attribute">
+        <article>
+          <img src="img/man (3).png" alt="" />
+          <h2>Samuel tale</h2>
+        </article>
+        <section class="time">
+          <article>
+            <span>Time Left =</span>
+            <span class="hour">00</span>: <span class="minute">00</span>:
+            <span class="second">00</span>
+          </article>
+        </section>
+      </section>
+
+      <div class="status-about-exam">
+        <h3>
+          <img src="img/lightbulb.png" alt="" />
+          Software Project Managment Final Exam
+        </h3>
+
+       <section class="status-exam">
+        <p>
+          <b>Started on</b>: &nbsp;  <span class="date">Monady, 15 April 2024, 1:56 PM</span>
+        </p>
+        <p><b>status</b>:   &nbsp; taking</p>
+        <p><b>Time Taken</b>: &nbsp; <span class="time-alloted"> 1 Hour 21 min</span></p>
+        <p><b>Grade</b>:  &nbsp; 50.00 Points</p>
+      </div>
+       </section>
+       <div class="exam">
+        <div class="description-exam">
+          <h4> Question <span class="num">1</span></h4>
+          <p class="status-per-exam"> Taking</p>
+          <p>mark: &nbsp; <span class="given-mark">0.00</span> out of <span class="mark">1.00</span></p>
+        </div>
+        <div class="main">
+          <p class="qusetion">
+          </p>
+          <section class="options">
+             <button></button>
+             <button></button>
+             <button></button>
+             <button></button>
+          </section>
+        </div>
+      </div>
+      <div class="wrap-answer">
+        <button class="btn-nxt ">Submit</button>
+        <section class="correct-answer vis-hidden">
+          <p>The correct answer is: &nbsp; <p class="correct"> True</p></p>
+        </section>
+      </div>
+    </div>
+
+   <!-- Handling the results of the quiz -->
+    <div class="wrap-result">
+      <div class="actions">
+        <h2>Result of your Exam </h2>
+        <p>Name : Samuel Tale</p>
+        <p>mark: out of <span class="total-mark"></span></p>
+        <p>Date: <span class="date"></></p>
+        <p>Finshed within : <span class="used-time"></span></p>
+
+        <div class="actual-result">
+           <section>
+            <span>Your Result: <span class="result"> 7.00</span> out of <span class="total-mark"></span></span>
+            <div>
+              <button class="result-percentage">95%</button>
+            </div>
+           </section>
+          </div>
+          <button class="start-new">Start-Again</button>
+      </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/exam.js"></script>
+  </body>
+</html>
